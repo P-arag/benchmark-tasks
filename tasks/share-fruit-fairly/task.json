@@ -15,5 +15,6 @@
   "run_limit": "2,400 steps (2 minutes at 20 Hz)",
   "reset_notes": "Put four oranges back on the table between the trays and two in Leo's tray. The trays are fixed (putty) and stay in place.",
   "fidelity": "Dream Labs' calibrated YAM station replica in Isaac Lab-Arena (Isaac Sim), with the station's own orange model, colliding through its convex decomposition. The trays are fixed rigid walls with the table as their floor; the children's names are given in the instruction and by tray colour, not on labels.",
-  "scores": "Dream-1 run: 0.0; demo: 1.0"
+  "scores": "Dream-1 run: 0.0; demo: 1.0",
+  "media": "M-B7CX86"
 }
