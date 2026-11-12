@@ -1,0 +1,14 @@
+{
+  "title": "Open a ring-pull tin of soup without spilling it",
+  "category": "Societal relevance",
+  "keywords": ["ring pull", "easy-open can", "food", "elder care", "bimanual", "steadying", "spill"],
+  "instruction": "Open the can.",
+  "context": "Ring-pull tins are hard for people with weak or arthritic hands, so opening food is a common request for a home-help robot. It takes a lift to crack the seal and a strong, steady pull to peel the lid back, while the other hand keeps the free-standing tin still and level so the soup doesn't slop out.",
+  "setup": "Positions in cm from the midpoint between the arm bases: x forward, y to the robot's left, heights above the table. A full, unopened 400 g tin of tomato soup (tinplate, 7.3 cm across, 11 cm tall, about 450 g with its contents, filled to 1 cm below the rim; red paper label reading TOMATO SOUP 400 g EASY OPEN) stands free (not taped) with the centre of its base at (34, 0). Its full-aperture easy-open lid has a 3 cm aluminium ring tab lying flat, riveted 6 mm in front of the lid's centre, its ring end toward the arms over a small finger dimple in the lid. Nothing else is on the table. Both arms start at the ready pose with open grippers.",
+  "scoring": "Judged from the video and, at the end, a photo and the tin's weight. Cracked: the ring has been lifted until the seal broke (the lid's score is torn at the nose). Spill: in the real trial, the tin weighs at least 5 g less than before (the drip tray under it catches any soup), or any soup is seen leaving the tin; in simulation, the tin tilts more than 15 degrees from upright at any time after the seal cracks (with the soup 1 cm below the rim, that is where it reaches the rim). 1.0: the lid is folded back at least 100 degrees (past vertical, or torn off), clear of the opening, with no spill, and the tin stands still for 1 s. 0.5: the lid peeled back at least 45 degrees, no spill. 0.25: cracked, lid not peeled 45 degrees, no spill. 0: anything else, including any spill, the tin knocked over at any time, or nothing done.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Each real trial uses a new, unopened tin (the lid can't be resealed); weigh it on the drip tray before the run. In simulation the reset re-locks the lid and lays the tab flat.",
+  "fidelity": "Isaac Lab-Arena YAM station. The tin is a free articulation: the lid hinges at its far edge and the tab at its rivet. The crack is task code: past 55 degrees of tab lift the lid unlocks; the tear is a 2 N m s/rad damper on the lid hinge and nothing springs back. The soup is mass only; a spill is the tilt that brings soup 1 cm below the rim to it. Lid and tab colliders are 0.8-1 mm (real: 0.2 mm).",
+  "scores": "Dream-1 run: TODO; demo: TODO",
+  "media": ""
+}
