@@ -1,0 +1,14 @@
+{
+  "title": "Clip a lead's bolt snap onto a dog collar's swinging D-ring",
+  "category": "Societal relevance",
+  "keywords": ["pet care", "bolt snap", "trigger", "bimanual", "D-ring", "small mechanism"],
+  "instruction": "Clip the lead onto the dog's collar.",
+  "context": "Clipping on a lead is one of the most frequent things dog owners, walkers and kennel staff do with their hands, and a robot helping someone with limited dexterity would do it daily. A bolt snap only opens while its trigger is held back, and the D-ring swings away when pushed, so it takes both hands.",
+  "setup": "Positions in cm from the midpoint between the arm bases: x forward, y to the robot's left, heights above the table. A seated plush dog form (tan fabric over foam, about 26 cm tall, fixed to the table) sits with the centre of its footprint at (42, 4), facing the arms. It wears a red nylon collar (2 cm wide, 35 cm round, over a neck 11 cm across) with a steel D-ring (2.5 cm wide, 3.5 mm wire) on a free hinge at the front of the collar, hanging down about 10 cm above the table. A 45 cm blue nylon traffic lead (2 cm webbing, about 40 g) lies on the table with its steel bolt snap (7.5 cm long including its swivel eye; spring bolt opening a 9 mm gap when its thumb trigger is pushed back 10 mm, about 3 N) lying on its side at (24, -16), hook toward the arms, the webbing running away from them. Both arms start at the ready pose with open grippers.",
+  "scoring": "Judged at the end from the video and one hand test. Clipped: the D-ring's wire is inside the snap's hook with the bolt fully shut, so a 10 N pull on the lead by hand doesn't free it (in simulation: the hook-and-bolt loop and the D-ring are linked, Gauss linking number above 0.5). Let go: no part of either gripper within 3 cm of the snap, and the snap still for 1 s. 1.0: clipped and let go. 0.5: clipped but still held. 0.25: the D-ring's wire inside the hook but the bolt not fully shut. 0: anything else, including pulling the trigger without getting the ring in the hook, or nothing done.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Unclip the lead, lay the snap on its side at its mark with the hook toward the arms and the lead straight behind it; let the D-ring hang still.",
+  "fidelity": "Isaac Lab-Arena YAM station. The dog form is fixed primitives with a collar; the D-ring is capsules on a free hinge. The snap is an articulation: hook of capsules, sprung bolt with its trigger; the lead is 10 hinged webbing links. Clipped is decided by linking the hook loop and the D-ring; the hand tug is real-world only. The snap's swivel eye is fixed.",
+  "scores": "Dream-1 run: TODO; demo: TODO",
+  "media": ""
+}
