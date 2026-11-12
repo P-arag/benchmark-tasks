@@ -1,0 +1,14 @@
+{
+  "title": "Fold a travel stroller: press both release buttons together, fold it until the storage latch catches",
+  "category": "Societal relevance",
+  "keywords": ["childcare", "stroller", "two-button release", "bimanual", "folding mechanism", "latch"],
+  "instruction": "Fold the stroller.",
+  "context": "Parents fold strollers several times a day, for cars, buses and doorways. Most models need two hands: a two-button child-safety release must be pressed on both sides at once before the frame will fold, and it should end latched so it doesn't spring open when carried.",
+  "setup": "Positions in cm from the midpoint between the arm bases: x forward, y to the robot's left, heights above the table. A compact umbrella-type travel stroller (aluminium tube frame, 22 mm tubes, 45 cm wide, about 6 kg, blue fabric seat) stands open on its four black wheels (15 cm rear, 12 cm front) on the table, its push handles toward the arms (tops 95 cm above the table, 30 cm toward the arms from the hinge), its main fold hinge 45 cm above the table centred over (40, 0). A red release button (2.5 x 2.5 cm) sticks out 1.2 cm from each side of the main hinge, pressed inward 6 mm to release (about 15 N each, both at once). The rear wheels are 22 cm toward the arms from the hinge, the front wheels 30 cm away from them. Both arms start at the ready pose with open grippers.",
+  "scoring": "Judged from the video and a photo at the end. Released: both buttons were pressed in past 4 mm at the same moment (the fold only moves after this). Fold angle: the angle the front legs have swung back toward the rear legs (66 degrees when fully folded). 1.0: folded until the storage latch caught (within 4 degrees of fully folded; it stays folded when let go), standing within 30 degrees of upright, still for 1 s. 0.5: folded at least 20 degrees but not latched. 0.25: released, folded less than 20 degrees. 0: anything else, including pressing one button only, or the stroller tipped over (past 60 degrees) at any time.",
+  "run_limit": "2,400 steps (2 minutes at 20 Hz)",
+  "reset_notes": "Release the storage latch, open the stroller until the fold locks, stand it on its wheels on the marks.",
+  "fidelity": "Isaac Lab-Arena YAM station. The stroller is a free articulation: rear frame with handles, front frame on the fold hinge, two sprung buttons. Locks are task code: both buttons past 4 mm free the fold; within 4 degrees of folded it latches. Wheels are low-friction fixed cylinders (no rolling joints); the fabric is visual only. Real-size frame (see README: reach).",
+  "scores": "Dream-1 run: TODO; demo: TODO",
+  "media": ""
+}
